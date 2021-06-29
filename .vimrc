@@ -116,7 +116,7 @@ set ignorecase smartcase    " make searches case-insensitive, unless they
 set backspace=indent,eol,start  " allow backspacing over everything.
 set esckeys                     " Allow cursor keys in insert mode.
 set nostartofline               " Make j/k respect the columns
-" set virtualedit=all            " allow the cursor to go in to 'invalid' places
+set virtualedit=all            " allow the cursor to go in to 'invalid' places
 set timeoutlen=500              " how long it wait for mapped commands
 set ttimeoutlen=100             " faster timeout for escape key and others
 
@@ -154,7 +154,7 @@ hi link OverLength Error
 
 if has('gui_running')
     "set guifont=Menlo:h13
-    set gfn:Monaco:h14
+    set gfn:Monaco:h16
     set transp=0
 
     " toolbar and scrollbars
@@ -171,7 +171,7 @@ endif
 set cursorline              " Highlight current line
 set laststatus=2            " Always show status line
 set number                  " Enable line numbers.
-set numberwidth=5           " width of numbers line (default on gvim is 4)
+set numberwidth=4           " width of numbers line (default on gvim is 4)
 set report=0                " Show all changes.
 set showmode                " Show the current mode.
 set showcmd                 " show partial command on last line of screen.
@@ -179,9 +179,9 @@ set showmatch               " show matching parenthesis
 set splitbelow splitright   " how to split new windows.
 set title                   " Show the filename in the window title bar.
 
-set scrolloff=5             " Start scrolling n lines before horizontal
+set scrolloff=1             " Start scrolling n lines before horizontal
                             "   border of window.
-set sidescrolloff=7         " Start scrolling n chars before end of screen.
+set sidescrolloff=1         " Start scrolling n chars before end of screen.
 set sidescroll=1            " The minimal number of columns to scroll
                             "   horizontally.
 
